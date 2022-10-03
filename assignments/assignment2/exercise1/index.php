@@ -1,15 +1,15 @@
 <?php
 $ul = "<ul>" ;
 
-$i = 0;
+$i = 1;
 
 while($i < 5){
   $ul .= "<li>$i";
   $j = 0;
   $ul .= "<ul>";
-  //while($j < 5){
-  //  $ul .= "<li>$j</li>";
-  //}
+  while($j < 5){
+    $ul .= "<li>$j</li>";
+  }
 
   $ul .= "</ul></li>";
 
