@@ -6,7 +6,7 @@
         
         for($i = 1; $i <= $numOfRows; $i++){
             $table .= "<tr>";
-            for($j = 1; $j <= $numOfCols; $j++){
+            for($j = 1; $j <= $numOfColms; $j++){
                 $table .= "<td> Row $i Column $j </td>";
         }
         }
