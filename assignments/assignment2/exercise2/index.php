@@ -2,8 +2,14 @@
 $title = "My Web Page";
 $header = "My Web Page";
 $name = "Sara Smith";
-$str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat mollis dolor at bibendum. In congue maximus ligula, ut faucibus mi accumsan at. Vestibulum sagittis tortor eget dui ultricies, a vulputate lacus faucibus. Fusce aliquet bibendum erat, sed bibendum eros cursus eu. Nulla at neque rhoncus, ultricies odio at, accumsan elit. Proin in turpis eu leo dapibus pulvinar. Vivamus viverra massa ut enim fringilla ultricies. Donec in enim blandit, iaculis nulla quis, egestas elit. Nullam ut enim id erat bibendum finibus nec ac eros. Nulla malesuada ex facilisis ultrices rhoncus. Nullam in euismod nisl. Donec pulvinar ex sit amet aliquet egestas.";
-$n = 3;
+function loop(){
+$i=0;
+while($i < 3){
+	$str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat mollis dolor at bibendum. In congue maximus ligula, ut faucibus mi accumsan at. Vestibulum sagittis tortor eget dui ultricies, a vulputate lacus faucibus. Fusce aliquet bibendum erat, sed bibendum eros cursus eu. Nulla at neque rhoncus, ultricies odio at, accumsan elit. Proin in turpis eu leo dapibus pulvinar. Vivamus viverra massa ut enim fringilla ultricies. Donec in enim blandit, iaculis nulla quis, egestas elit. Nullam ut enim id erat bibendum finibus nec ac eros. Nulla malesuada ex facilisis ultrices rhoncus. Nullam in euismod nisl. Donec pulvinar ex sit amet aliquet egestas. <br> <br>";
+	$i++;
+	echo $str;
+}
+}
 $footer = "My Web Page ©2022"
 ?>
 <!DOCTYPE html>
@@ -33,9 +39,7 @@ $footer = "My Web Page ©2022"
 			<h2>My name is <?php echo $name; ?> </h2>
 			<p>
 				<?php 
-					for($i = 0; $i < $n; $i++) {
-						echo "$str<br><br>";
-					}
+					echo loop();
 				?>
 			</p>
 			
