@@ -1,22 +1,25 @@
 <?php
-$ul = "<ul>" ;
 
-$i = 1;
+  function loop(){
+    $i = 1;
+    $j = 1;
+    
+    while($i < 5){
+      $j = 1;
+      $x = "<li> $i </li>";
+      while($j < 6){
+       $x .= "<ul> <li> $j </li> </ul>";
+       $j++;
+        
+      }
+      echo $x;
+      $i++;
+      
 
-while($i < 5){
-  $ul .= "<li>$i";
-  $j = 0;
-  $ul .= "<ul>";
-  while($j < 5){
-    $ul .= "<li>$j</li>";
+    }
   }
+   
 
-  $ul .= "</ul></li>";
-
-  $i++;
-}
-
-$ul .= "</ul>";
 
    
 ?> 
@@ -29,6 +32,6 @@ $ul .= "</ul>";
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
   <body>
-    <?php echo $ul; ?>
+    <?php echo loop(); ?>
   </body>
 </html>
