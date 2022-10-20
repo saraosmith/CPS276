@@ -35,6 +35,9 @@ class Calculator {
 
     }
 }
+
+//$Calc = new Calculator();
+//echo $Calc->calc(10);
 ?>
 </body>
 <html>
